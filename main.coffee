@@ -7,7 +7,7 @@ cellSize = 50
 cellPadding = 5
 
 $(document).ready ->
-  d3.text "/stolen-vehicles-pt2/stolenvehicles2.csv", (text) ->
+  d3.text "stolenvehicles2.csv", (text) ->
     vehicles = d3.csv.parseRows text, (d) ->
       vehicle =
         plate: d[0]

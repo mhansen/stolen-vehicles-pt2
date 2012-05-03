@@ -13,7 +13,7 @@ cellSize = 50;
 cellPadding = 5;
 
 $(document).ready(function() {
-  return d3.text("/stolen-vehicles-pt2/stolenvehicles2.csv", function(text) {
+  return d3.text("stolenvehicles2.csv", function(text) {
     var graph, regionChooser, regionModel, regionTitle, stolenCarsModel, vehicles, weekGraph;
     vehicles = d3.csv.parseRows(text, function(d) {
       var vehicle;
